@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: "Poppins", sans-serif;
+    color: #3A3A3A;
+    background-color: #FFFFFF;
+}
+h1{
+    font-size: 52px;
+}
+h2{
+    font-size: 38px;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 24px;
+}
+p{
+    font-size: 16px;
+}
+small{
+    font-size: 14px;
+}
+
+/* navigation part */
+
+header{
+    margin: auto 80px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-element{
+    display: flex;
+    align-items: center;
+}
+.navigation{
+    text-decoration: none;
+    color: #3A3A3A;
+    margin-left: 34px;
+}
+.fa-solid{
+    font-size: 22px;
+}
+
+/* -------------
+           Body start
+           ------------ */
+
+/* section-1 */
+.first-article{
+    display: flex;
+    margin: 0 80px;
+}
+.heading{
+    width: 582px;
+    height: 270px;
+    margin-top: 90px;
+}
+.heading h2{
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.heading p{
+    margin-top: 0;
+    margin-bottom: 16px;
+    margin-right: 50px;
+    text-align: left;
+}
+.heading button{
+    background-color: #E02C6D;
+    padding: 5px 20px;
+    border-radius: 25px;
+    border: none;
+}
+
+.heading a{
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.heading-photo{
+    width: 475px;
+    height: 475px;
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading-photo img{
+    width: 440px;
+    height: 414px;
+}
