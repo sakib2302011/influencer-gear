@@ -246,6 +246,18 @@ footer p{
 --------------*/
 
 @media screen and (max-width: 767px) {
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 26px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    p{
+        font-size: 14px;
+    }
     .toggle-btn{
         display: block;
     }
@@ -270,16 +282,25 @@ footer p{
         flex-direction: column;
         align-items: center;
         text-align: center;
+        width: auto;
     }
     .heading-text{
         text-align: center;
     }
+    .heading-photo{
+        height: auto;
+        width: auto;
+    }
+    .heading-photo img{
+        width: 257px;
+        height: 257px;
+    }
     .shops{
         border: none;
         flex-wrap: wrap;
-        margin: 0;
+        margin: 0 3%;
         padding: 0;
-        
+        justify-content: center;
         
     }
     .shop-logo{
