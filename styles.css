@@ -21,27 +21,44 @@ p{
 }
 
 /* navigation part */
-
 header{
-    margin: auto 80px;
+    display: inline-block;
+    width: 85%;
+    padding: 25px 80px;
+    position: relative;
+}
+.nav-text{
+    float: left;
 }
 nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    float: right;
 }
-.nav-element{
-    display: flex;
-    align-items: center;
+nav ul li{
+    display: inline-block;
+    padding: 15px 15px;
 }
-.navigation{
+nav ul li a{
     text-decoration: none;
+    display: inline-block;
     color: #3A3A3A;
-    margin-left: 34px;
+    font-weight: 600;
 }
-.fa-magnifying-glass, .fa-cart-shopping{
-    font-size: 22px;
+.toggle-btn{
+    width: 35px;
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    display: none;
 }
+.toggle-btn span{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color:#3A3A3A;
+    float: left;
+    margin-bottom: 8px;
+}
+
 
 /* -------------
            Body start
@@ -50,7 +67,7 @@ nav{
 /* section-1 */
 .first-article{
     display: flex;
-    margin: 0 80px;
+    margin: 0 7%;
 }
 .heading{
     width: 582px;
@@ -103,11 +120,13 @@ nav{
 /* shops logo*/
 .shops{
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin: 80px 100px;
+    margin: 80px 8%;
     border: 1px solid #C0CCDA;
     padding: 25px 10px;
+}
+.shop-logo{
+    margin: 17px;
 }
 
 /* popular collection */
@@ -220,3 +239,60 @@ footer p{
     font-size: 20px;
     
 }
+
+
+/* --------------
+---- responsive part
+--------------*/
+
+@media screen and (max-width: 767px) {
+    .toggle-btn{
+        display: block;
+    }
+    nav{
+        display: none;
+        width: 85%;
+        margin-top: 30px;
+        background-color: #FFFFFF;
+    }
+    nav ul li{
+        padding: 15px 0;
+        width: 100%;
+    }
+    nav.show{
+        display: block;
+    }
+    .first-article{
+        flex-direction: column-reverse;
+    }
+    .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .heading-text{
+        text-align: center;
+    }
+    .shops{
+        border: none;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+    .shop-logo{
+        width: 15%;
+    }
+    .collections{
+        grid-template-columns: repeat(1, 320px);
+    }
+    .last-feature{
+        /* margin: 150px 7% 100px 7%; */
+        flex-direction: column;
+    }
+}
+/* @media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+} */
